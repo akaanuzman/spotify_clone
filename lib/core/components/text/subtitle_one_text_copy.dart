@@ -19,7 +19,6 @@ class SubtitleOneTextCopy extends StatelessWidget {
         color: color ?? context.colorSchemePrimary,
         fontWeight: fontWeight ?? FontWeight.w500,
         height: height ?? 1.2,
-        
       ),
     );
   }

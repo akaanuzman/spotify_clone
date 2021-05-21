@@ -9,7 +9,12 @@ class ImageContainer extends StatelessWidget {
   final double? radius;
 
   const ImageContainer(
-      {Key? key, required this.height, this.width, required this.path,this.fit,this.radius})
+      {Key? key,
+      required this.height,
+      this.width,
+      required this.path,
+      this.fit,
+      this.radius})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -18,13 +23,11 @@ class ImageContainer extends StatelessWidget {
       width: width ?? context.dynamicWidth(0.32),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage(
-            path,
-          ),
-          fit: fit ?? BoxFit.contain
-          
-        ),
-        borderRadius: BorderRadius.circular(radius ?? 0)
+            image: AssetImage(
+              path,
+            ),
+            fit: fit ?? BoxFit.contain),
+        borderRadius: BorderRadius.circular(radius ?? 0),
       ),
     );
   }

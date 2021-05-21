@@ -5,8 +5,6 @@ extension ContextExtension on BuildContext {
 }
 
 extension ColorExtension on BuildContext {
-  Color get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
-
   // ColorScheme
   Color get colorSchemePrimary => theme.colorScheme.primary;
   Color get colorSchemePrimaryVariant => theme.colorScheme.primaryVariant;
@@ -21,13 +19,13 @@ extension ColorExtension on BuildContext {
   Color get colorSchemeOnBackground => theme.colorScheme.onBackground;
   Color get colorSchemeOnError => theme.colorScheme.onError;
 
+  // Colors
+  Color get scaffoldBackgroundColor => theme.scaffoldBackgroundColor;
   Color get primaryColor => theme.primaryColor;
   Color get accentColor => theme.accentColor;
   Color get errorColor => theme.errorColor;
-  // TabBarTheme
-  Color? get tabBarLabelColor => theme.tabBarTheme.labelColor;
-  Color? get tabBarUnselectedLabelColor => theme.tabBarTheme.unselectedLabelColor;
 
+  // Opacity
   Color greywithOpacity(double opacity) =>
       colorSchemeSurface.withOpacity(opacity);
   Color blackWithOpacity(double opacity) =>

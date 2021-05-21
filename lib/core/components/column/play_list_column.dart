@@ -41,7 +41,6 @@ class PlayListColumn extends StatelessWidget {
               (index) => Padding(
                 padding: padding,
                 child: Container(
-                  
                   height: height,
                   width: width,
                   decoration: BoxDecoration(

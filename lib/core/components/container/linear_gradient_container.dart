@@ -4,7 +4,8 @@ class LinearGradientContainer extends StatelessWidget {
   final List<Color> colors;
   final Widget child;
 
-  const LinearGradientContainer({Key? key, required this.colors,required this.child})
+  const LinearGradientContainer(
+      {Key? key, required this.colors, required this.child})
       : super(key: key);
 
   @override
