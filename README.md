@@ -1,7 +1,7 @@
 # 🔥 Spotify Clone App with Flutter
 
 ## 🎁 Packages 
-I used the "kartal" package in this project because it provides convenience in design.
+##### I used the "kartal" package in this project because it provides convenience in design.
 <br/>
 If you want to reach the "kartal" package:
 <br/>
